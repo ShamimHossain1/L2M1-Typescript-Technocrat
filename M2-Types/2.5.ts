@@ -42,6 +42,20 @@
     // console.log(res8);
     // console.log(res9);
 
+    const addCourse =<T> (student : T)=>{
+        const course = "React";
+        return {
+            ...student,
+            course
+        }
+    }
+
+    const student = addCourse({
+        name: "John Doe",
+        age: 30,
+    });
+    console.log(student);
+
 
     
 }
