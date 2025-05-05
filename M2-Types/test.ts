@@ -75,3 +75,4 @@ type tupleGeneric<T, U>= [T, U];
 
 const rollNumbers6 : tupleGeneric<number, string> = [1, "1"];
 const rollNumbers7 : tupleGeneric<string, number> = ["1", 1];
+
