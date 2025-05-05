@@ -24,5 +24,24 @@
     // console.log(res5);
 
 
+
+
+
+    const createArrayWithTuple = <T, U>(param: T, param2: U): [T, U]=>{
+        return [param, param2];
+    }
+
+
+    const res6 = createArrayWithTuple<string, number>("Hello World", 1);
+    const res7 = createArrayWithTuple<number, string>(1, "Hello World");
+    const res8 = createArrayWithTuple<boolean, string>(true, "Hello World");
+    const res9 = createArrayWithTuple<{name: string, age: number}, string>({name: "John Doe", age: 30}, "Hello World");
+
+    // console.log(res6);
+    // console.log(res7);
+    // console.log(res8);
+    // console.log(res9);
+
+
     
 }
