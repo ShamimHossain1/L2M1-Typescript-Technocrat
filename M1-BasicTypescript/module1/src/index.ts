@@ -41,3 +41,30 @@ const poorUser ={
         return this.balance + balance;
     }
 }
+
+const arr : number[] = [1, 2, 3, 4, 5];
+const newArray: number[] = arr.map((elem: number): number => elem * 2);
+
+// Type Aliases
+type Student = {
+    name: string;
+    rollNumber: number;
+    isStudent: boolean;
+}
+
+const student: Student = {
+    name: "Shamim",
+    rollNumber: 12345,
+    isStudent: true
+}
+
+type ADD = (num1: number, num2: number) => number;
+const addFunction: ADD = (num1, num2)=> {
+    return num1 + num2;
+}
+
+// Union Types
+
+type StringOrNumber = string | number;
+const userId: StringOrNumber = 12345;
+const userName: StringOrNumber = "Shamim";
