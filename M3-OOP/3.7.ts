@@ -1,6 +1,5 @@
 {
     // static
-
     class A {
         static count : number = 0;
         increment() {
