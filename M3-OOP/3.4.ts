@@ -10,6 +10,7 @@
         makeSound() {
             console.log(`${this.name} makes a sound.`);
         }
+        
     }
 
     class Dog extends Animal {
@@ -30,7 +31,6 @@
             console.log(`${this.name} meows.`);
         }
     }
-
 
     const isDog = (animal: Animal): animal is Dog => {
         return animal instanceof Dog;
